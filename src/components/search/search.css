@@ -1,0 +1,14 @@
+.async-paginate__control {
+    width: 355px;
+    position: relative;
+    top: 5px
+}
+.async-paginate__menu {
+    width: 40px;
+    border-radius: 4px;
+}
+.wrap-search {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}

@@ -59,3 +59,25 @@
     color: #725bb8;
     font-weight: 800;
 }
+.temperature-chart {
+    margin-top: 20px; /* Space above the chart */
+    padding: 10px;    /* Internal padding */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .temperature-chart .recharts-wrapper {
+    width: 100%; /* Ensure chart is responsive */
+  }
+  
+  .temperature-chart .recharts-tooltip-wrapper {
+    background-color: white; /* Tooltip background */
+    border-radius: 4px; /* Rounded corners for tooltip */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tooltip shadow */
+  }
+  
+  .temperature-chart .recharts-surface {
+    overflow: visible; /* Ensure any overflow is shown */
+  }
+  
