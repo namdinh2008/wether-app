@@ -3,36 +3,42 @@
     font-weight: 700;
 }
 .daily-item {
-    background-color: #725bb8;
+    background-color: white;
     border-radius: 15px;
-    height: 40px;
+    height: 170px;
     margin: 5px;
-    display: flex;
     align-items: center;
     font-size: 14px;
     cursor: pointer;
-    padding: 5px 20px;
+    padding-left: 30px;
+    color: #212121;
+    
 }
 
 .icon-small {
+    position: relative;
+    left: 20px;
+    top: 40px;
     width: 40px;
 }
 
 .day {
     color: #212121;
-    flex: 1 1;
     font-weight: 600;
-    margin-left: 15px;
+    position: relative;
+    top : 30px;
+    left: 15px;
+    
 }
 .description {
-    color: lightgray;
-    flex: 1 1;
-    margin-right: 15px;
-    text-align: right;
+    margin-top: 50px;
+    padding-left: 10px;
+    color: rgb(155, 154, 154);
 }
 
 .min-max {
-    color: lightblue;
+    margin-top: 10px;
+    margin-left: 27px;
 }
 
 .daily-details-grid {
@@ -62,9 +68,9 @@
 .temperature-chart {
     margin-top: 20px; /* Space above the chart */
     padding: 10px;    /* Internal padding */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: white; /* Light background color */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 500px;
   }
   
   .temperature-chart .recharts-wrapper {
@@ -80,4 +86,17 @@
   .temperature-chart .recharts-surface {
     overflow: visible; /* Ensure any overflow is shown */
   }
-  
+
+  .accordion__item {
+    width: 300px;
+  }
+
+  .wrap-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    
+  }
+  .wrap-box {
+    width: 50%;
+  }

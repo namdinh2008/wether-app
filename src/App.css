@@ -1,5 +1,26 @@
+
+
 .container {
-  max-width: 1080px;
-  margin: 20px auto;
-  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media only screen and (max-width: 768px){
+  .container {
+    flex-direction: column;
+    width: auto;
+  }
+  .contai {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .two-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
