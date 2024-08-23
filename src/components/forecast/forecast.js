@@ -11,7 +11,6 @@ import {
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   Area,
   ResponsiveContainer,
