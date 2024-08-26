@@ -31,10 +31,10 @@ const Search = ({ onSearchChange }) => {
   return (
     <>
       <div className="wrap-search">
-        <div>
+        <div className="title-name">
           <p>Your City:</p>
         </div>
-        <div>
+        <div className="Asy">
           <AsyncPaginate
             placeholder="Search for city"
             debounceTimeout={600}

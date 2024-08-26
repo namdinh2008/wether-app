@@ -17,7 +17,7 @@
 
 .icon-small {
     position: relative;
-    left: 20px;
+    left: 15px;
     top: 40px;
     width: 40px;
 }
@@ -25,20 +25,20 @@
 .day {
     color: #212121;
     font-weight: 600;
+    margin-left: 10px;
     position: relative;
     top : 30px;
-    left: 15px;
     
 }
 .description {
     margin-top: 50px;
-    padding-left: 10px;
+    padding-left: 5px;
     color: rgb(155, 154, 154);
 }
 
 .min-max {
     margin-top: 10px;
-    margin-left: 27px;
+    margin-left: 22px;
 }
 
 .daily-details-grid {
@@ -50,6 +50,7 @@
     flex: 1 1;
     grid-template-columns: auto auto;
     padding: 5px 15px;
+
 }
 .daily-detail-grid-item {
     display: flex;
@@ -71,6 +72,9 @@
     background-color: white; /* Light background color */
     border-radius: 8px; /* Rounded corners */
     width: 500px;
+    padding-right: 20px;
+    position: relative;
+    right: 10px;
   }
   
   .temperature-chart .recharts-wrapper {
@@ -99,4 +103,16 @@
   }
   .wrap-box {
     width: 50%;
+  }
+
+  @media only screen and (max-width: 520px) {
+    .temperature-chart {
+      width: 400px;
+      padding-left: 50px;
+    }
+    
+    .daily-details-grid-item {
+      flex-wrap: wrap;
+    }
+
   }

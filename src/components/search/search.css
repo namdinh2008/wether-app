@@ -1,7 +1,6 @@
 .async-paginate__control {
     width: 355px;
-    position: relative;
-    top: 5px
+    margin-top: 5px;
 }
 .async-paginate__menu {
     width: 40px;
@@ -10,9 +9,20 @@
 .wrap-search {
     display: flex;
     justify-content: space-between;
-    width: 440px;
+    width: auto;
 }
 .wrap-search {
     padding: 10px 0 0 20px;
 
+}
+.title-name {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 520px) {
+    .async-paginate__control {
+        width: 200px;
+    }
+    .wrap-search {
+        width: auto;
+    }
 }
