@@ -7,7 +7,6 @@ import { useState } from "react";
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-  const [backgroundColor, setBackgroundColor] = useState("#d5d4d4");
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -32,12 +31,11 @@ function App() {
       })
       .catch((err) => console.log(err));
 
-    setBackgroundColor("#ffffff");
   };
 
   console.log(forecast);
   return (
-      <div className="container" style={{ backgroundColor }}>
+      <div className="container">
         <div className="contai">
           <Search onSearchChange={handleOnSearchChange} />
           {currentWeather && <CurrentWeather data={currentWeather} />}

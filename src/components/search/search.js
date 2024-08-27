@@ -27,6 +27,7 @@ const Search = ({ onSearchChange }) => {
   const handleOnChange = (searchData) => {
     setSearch(searchData);
     onSearchChange(searchData);
+    setSearch("");  // Reset input field
   };
   return (
     <>
