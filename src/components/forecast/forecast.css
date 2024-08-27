@@ -16,8 +16,8 @@
 }
 
 .icon-small {
+    margin-left: 13px;
     position: relative;
-    left: 15px;
     top: 40px;
     width: 40px;
 }
@@ -111,8 +111,28 @@
       padding-left: 50px;
     }
     
-    .daily-details-grid-item {
-      flex-wrap: wrap;
+    .wrap-flex {
+      width: 200px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+    .min-max {
+      margin-right: 10px;
+    }
+    
+    
+
+  }
+
+  @media only screen and (max-width: 470px) {
+    .temperature-chart {
+      width: 350px;
+    }
+    
+    .wrap-box {
+      position: relative;
+      right: 30px;
     }
 
   }
