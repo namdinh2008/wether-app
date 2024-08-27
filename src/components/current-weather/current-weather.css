@@ -98,5 +98,15 @@
     .weather {
         width: 330px;
     }
+    .top, .bottom {
+        padding-right: 30px;
+
+    }
+    .icon-temp {
+        padding-left: 20px;
+    }
+    .details {
+        padding-left: 5px;
+    }
 }
 
