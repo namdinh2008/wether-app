@@ -127,7 +127,7 @@
 
   @media only screen and (max-width: 470px) {
     .temperature-chart {
-      width: 350px;
+      width: 330px;
     }
     
     .wrap-box {
