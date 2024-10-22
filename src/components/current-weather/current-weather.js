@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./current-weather.css";
+import { MdOutlineWaterDrop } from "react-icons/md";
 
 const CurrentWeather = ({ data }) => {
   // Function to convert degrees to compass points
@@ -65,30 +66,32 @@ const CurrentWeather = ({ data }) => {
     <div className="weather">
       <div className="top">
         <div>
-          <p className="date">{currentDateTime}</p>
           <p className="city">{data.city}</p>
+          <p className="date">{currentDateTime}</p>
         </div>
       </div>
       <div className="bottom">
         <div className="icon-temp">
-        <img
-          alt="weather"
-          className="weather-icon"
-          src={`icon-weather/${data.weather[0].icon}.png`}
-        />
-        <p className="temperature">{Math.round(data.main.temp)}°C</p>
+          <p className="temperature">{Math.round(data.main.temp)}°C</p>
+          <img
+            alt="weather"
+            className="weather-icon"
+            src={`icon-weather/${data.weather[0].icon}.png`}
+          />
         </div>
         <p className="weather-description">{data.weather[0].description}</p>
         <div className="details">
           <div className="parameter-row">
-            <div className="parameter-label">Humidity</div>
-            <div className="parameter-value">{data.main.humidity}%</div>
+            <span className="icon-humidity"><MdOutlineWaterDrop/> </span>
+            <span className="parameter-value">
+               {data.main.humidity}%
+            </span>
           </div>
           <div className="parameter-row">
-            <div className="parameter-label">Wind Speed</div>
-            <div className="parameter-value">
-              {data.wind.speed} m/s {windDirection}
-            </div>
+            <span class="material-symbols-outlined">air</span>
+            <span className="parameter-value wind-sp">
+              {data.wind.speed}m/s {windDirection}
+            </span>
           </div>
         </div>
       </div>

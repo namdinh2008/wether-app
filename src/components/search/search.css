@@ -1,5 +1,5 @@
 .async-paginate__control {
-    width: 355px;
+    width: 832px;
     margin-top: 5px;
 }
 .async-paginate__menu {
@@ -8,7 +8,7 @@
 }
 .wrap-search {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: auto;
 }
 .wrap-search {
@@ -18,7 +18,14 @@
 .title-name {
     margin-right: 10px;
 }
-@media only screen and (max-width: 520px) {
+
+@media only screen and (max-width: 1000px) {
+    .async-paginate__control {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
     .async-paginate__control {
         width: 200px;
     }

@@ -14,8 +14,10 @@ import {
   Tooltip,
   Area,
   ResponsiveContainer,
+  CartesianGrid
 } from "recharts";
 import "./forecast.css";
+
 
 const WEEK_DAY = [
   "Monday",
@@ -52,34 +54,35 @@ const Forecast = ({ data }) => {
   return (
     <div className="wrap-box">
       <div className="temperature-chart">
-        <ResponsiveContainer width="100%" height={250}>
-          <LineChart data={chartData}>
-            <XAxis dataKey="name" tick={{ fill: "#555", fontSize: 14 }} />
-            <YAxis tick={{ fill: "#555", fontSize: 14 }} domain={[0, 50]} />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: "#fff",
-                borderRadius: "4px",
-                boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-              }}
-            />
-            <Line
-              type="monotone"
-              dataKey="minTemp"
-              stroke="#8884d8"
-              strokeWidth={3} // Increased strokeWidth for a bolder line
-              name="Min Temp"
-            />
-            <Area
-              type="monotone"
-              dataKey="minTemp"
-              stroke="#8884d8"
-              fill="rgba(0, 123, 255, 0.3)" // Blue color fill with 30% opacity
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-      <Accordion allowZeroExpanded className="wrap-flex">
+      <ResponsiveContainer width="100%" height={250}>
+  <LineChart data={chartData}>
+    <CartesianGrid strokeDasharray="3 3" /> {/* Add this for grid lines */}
+    <XAxis dataKey="name" tick={{ fill: "#555", fontSize: 14 }} />
+    <YAxis tick={{ fill: "#555", fontSize: 14 }} domain={[0, 50]} />
+    <Tooltip
+      contentStyle={{
+        backgroundColor: "#fff",
+        borderRadius: "4px",
+        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+      }}
+    />
+    <Line
+      type="monotone"
+      dataKey="minTemp"
+      stroke="#8884d8"
+      strokeWidth={3} // Increased strokeWidth for a bolder line
+      name="Temp"
+    />
+    <Area
+      type="monotone"
+      dataKey="minTemp"
+      stroke="#8884d8"
+      fill="rgba(0, 123, 255, 0.3)" // Blue color fill with 30% opacity
+    />
+  </LineChart>
+</ResponsiveContainer>
+</div>
+      <Accordion allowZeroExpanded className="wrap-flex comings-day">
         {data.list.slice(0, 4).map((item, idx) => (
           <AccordionItem key={idx}>
             <AccordionItemHeading>
@@ -97,7 +100,7 @@ const Forecast = ({ data }) => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <div className="daily-details-grid">
+              {/* <div className="daily-details-grid">
                 <div className="daily-detail-grid-item">
                   <label>Pressure</label>
                   <label>{item.main.pressure} hPa</label>
@@ -122,7 +125,7 @@ const Forecast = ({ data }) => {
                   <label>Feels like:</label>
                   <label>{Math.round(item.main.feels_like)}°C</label>
                 </div>
-              </div>
+              </div> */}
             </AccordionItemPanel>
           </AccordionItem>
         ))}

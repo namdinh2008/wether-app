@@ -1,4 +1,8 @@
-
+.title-header {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
 
 .container {
   display: flex;
@@ -7,6 +11,9 @@
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+.contai {
+  width: 470px;
 }
 
 @media only screen and (max-width: 1000px){
@@ -21,6 +28,12 @@
   .two-block {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .title-header {
+    font-size: 25px;
   }
 }
 
