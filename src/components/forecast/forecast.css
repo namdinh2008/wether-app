@@ -69,7 +69,7 @@
   @media only screen and (max-width: 520px) {
     .temperature-chart {
       width: 400px;
-      padding-left: 30px;
+      padding-left: 10px;
     }
     
     .wrap-flex {
@@ -89,6 +89,7 @@
   @media only screen and (max-width: 470px) {
     .temperature-chart {
       width: 350px;
+      margin-left: 40px;
     }
     
     .wrap-box {
@@ -99,13 +100,24 @@
   }
   @media only screen and (max-width: 400px) {
     .temperature-chart {
-      padding-left: 20px;
+      padding-left: 10px;
     }
   }
+  @media only screen and (max-width: 375px) {
+    .temperature-chart {
+      padding-left: 0px;
+    }
+  }
+
 
   @media only screen and (max-width: 350px) {
     .temperature-chart {
       width: 300px;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .temperature-chart {
+      margin-left: 20px;
     }
   }
   

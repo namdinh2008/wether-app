@@ -12,7 +12,7 @@
     width: auto;
 }
 .wrap-search {
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 10px;
 
 }
 .title-name {
@@ -25,11 +25,26 @@
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 520px) {
     .async-paginate__control {
-        width: 200px;
+        width: 350px;
     }
     .wrap-search {
         width: auto;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .async-paginate__control {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .async-paginate__control {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .async-paginate__control {
+        width: 200px;
     }
 }

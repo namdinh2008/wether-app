@@ -32,9 +32,7 @@ const Search = ({ onSearchChange }) => {
   return (
     <>
       <div className="wrap-search">
-        <div className="title-name">
-          <p>Your City:</p>
-        </div>
+        <p className="title-name">Your City:</p>
         <div className="Asy">
           <AsyncPaginate
             placeholder="Search for city"

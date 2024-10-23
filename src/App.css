@@ -8,13 +8,16 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 .contai {
   width: 470px;
+}
+.day-forecast {
+  margin-top: 30px;
 }
 @media only screen and (max-width: 1000px){
   .container {

@@ -76,5 +76,6 @@
 @media only screen and (max-width: 375px) {
     .wrap-flex {
         width: 300px;
+        padding-left: 20px;
     }
 }
