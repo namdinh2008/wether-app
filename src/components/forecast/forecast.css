@@ -69,7 +69,7 @@
   @media only screen and (max-width: 520px) {
     .temperature-chart {
       width: 400px;
-      padding-left: 50px;
+      padding-left: 30px;
     }
     
     .wrap-flex {
@@ -97,3 +97,15 @@
     }
 
   }
+  @media only screen and (max-width: 400px) {
+    .temperature-chart {
+      padding-left: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .temperature-chart {
+      width: 300px;
+    }
+  }
+  

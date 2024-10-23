@@ -35,5 +35,18 @@
   .title-header {
     font-size: 25px;
   }
+  .contai {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .two-block {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .two-block {
+    width: 300px;
+  }
 }
 

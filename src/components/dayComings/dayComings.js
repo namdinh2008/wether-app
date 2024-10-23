@@ -36,8 +36,8 @@ const DayComings = ({ data }) => {
                     className="icon-small"
                     src={`icon-weather/${item.weather[0].icon}.png`}
                   />
-                  <div className="description">Humidity</div>
-                  <div className="min-max">{item.main.humidity}%</div>
+                  <div className="min-max">{Math.round(item.main.temp)}°C</div>
+                  <div className="description">{item.main.humidity}% Humidity</div>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>

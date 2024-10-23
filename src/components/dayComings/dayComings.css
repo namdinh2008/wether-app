@@ -1,9 +1,9 @@
 .daily-item {
     background-color: white;
     border-radius: 10px;
-    border: 1px solid gray;
-    height: 170px;
-    margin-left: 15px;
+    border: 2px solid rgb(181, 181, 181);
+    height: 150px;
+    margin-left: 20px;
     font-size: 14px;
     cursor: pointer;
     color: #212121;
@@ -17,7 +17,7 @@
 .day {
     color: #212121;
     font-weight: 600;
-    padding-top: 30px;
+    padding-top: 15px;
     
 }
 .description {
@@ -26,6 +26,7 @@
 }
 .min-max {
     margin-top: 10px;
+    font-weight: 600;
 }
 .wrap-flex {
     display: flex;
@@ -51,7 +52,7 @@
 @media only screen and (max-width: 520px) {
     .daily-item {
         border: none;
-        margin-left: 30px;
+        margin-left: 0px;
     }
     .wrap-flex {
         width: 400px;
@@ -65,10 +66,15 @@
 }
 @media only screen and (max-width: 375px) {
     .daily-item {
-        padding-left: 30px;
+        padding-left: 0px;
         
     }
     .wrap-flex {
         width: 350px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .wrap-flex {
+        width: 300px;
     }
 }
