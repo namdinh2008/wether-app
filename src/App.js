@@ -2,6 +2,7 @@ import "./App.css";
 import Search from "./components/search/search";
 import CurrentWeather from "./components/current-weather/current-weather";
 import Forecast from "./components/forecast/forecast";
+import DayComings from "./components/dayComings/dayComings";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./components/api";
 import { useState } from "react";
 function App() {
@@ -44,6 +45,7 @@ function App() {
         </div>
         <div className="two-block">{forecast && <Forecast data={forecast} />}</div>
       </div>
+      <div className="day-forecast"><DayComings data={forecast} /></div>
     </div>
   );
 }
