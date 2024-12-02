@@ -16,7 +16,7 @@ A modern weather application built with React that provides real-time weather fo
 
 ## 🚀 Live Demo
 
-[View Weather App Demo](https://your-demo-link-here.com)
+[View Weather App Demo](https://weather-app-namdinh.netlify.app/)
 
 ## 🛠️ Technologies Used
 
